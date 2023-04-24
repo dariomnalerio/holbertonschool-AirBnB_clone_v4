@@ -165,6 +165,6 @@ David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twit
 Dario Nalerio -  [Github](https://github.com/dariomnalerio)
 
 Nahuel Menendez -  [Github](https://github.com/NMenendez24)
-Second part of Airbnb: Joann Vuong
+
 ## License
 Public Domain. No copy write protection. 
