@@ -22,17 +22,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     });
-});
 
-// Check API status
-const apiStatus = document.querySelector("#api_status");
-const url = "http://0.0.0.0:5001/api/v1/status/";
-const response = fetch(url);
-
-response.then((response) => {
-  if (response.ok) {
-    apiStatus.classList.add("available");
-  } else {
-    apiStatus.classList.remove("available");
-  }
+    // Check API status
+    const apiStatus = document.querySelector("#api_status");
+    const url = "http://localhost:5001/api/v1/status/";
+    const response = fetch(url)
+    
+    response.then((response => {
+      if (response.ok) {
+        apiStatus.classList.add("available");
+      } else {
+        apiStatus.classList.remove("available");
+      }
+    }));
 });
