@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Check API status
   const apiStatus = document.querySelector("#api_status");
   const apiStatusUrl = "http://localhost:5001/api/v1/status/";
+  const sectionPlaces = document.querySelector("section.places")
   const response = fetch(apiStatusUrl);
 
   response.then((response) => {
@@ -62,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
           .then((response) => response.json())
           .then((user) => {
             // Create HTML for the current place and user and insert it into the UI
-            const html = `
+              const html = `
               <article>
                 <div class="title_box">
                   <h2>${place.name}</h2>
